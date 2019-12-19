@@ -1,0 +1,60 @@
+- Class: meta
+  Course: Cool as Heck Guide to a Programmer
+  Lesson: Introduction to R
+  Author: DL.E
+  Type: Standard
+  Organization: Definitely Not David
+  Version: 2.4.4
+
+- Class: text
+  Output: Hello my dudes!
+
+- Class: text
+  Output: Did it work?
+
+- Class: text
+  Output: Alright. Let's start with our most simple task. 
+
+- Class: cmd_question
+  Output: Try create an object "Pikachu" by typing "Pikachu <- 2 + 2"into the console.
+  CorrectAnswer: Pikachu <- 2 + 2
+  AnswerTests: omnitest(correctExpr='Pikachu <- 2 + 2');expr_creates_var('Pikachu')
+  Hint: Type Pikachu <- 2 + 2. If its still too hard for you, you may type "skip()" into your console. 
+
+- Class: text
+  Output: Cool. You've learned how to create an object! If you look at your top-right corner (your environment window to be more precise), you'll notice an object named "Pikachu" in it. This Pokemon will be crucial to your next question.
+
+- Class: cmd_question
+  Output: Let's try naming a Pokemon. Type "Pikachu" into the console again. Remember, you must have him created as an object to pass this question. Otherwise, you'll get an error message and I'll make fun of you through the hint pop-up message.
+  CorrectAnswer: Pikachu
+  AnswerTests: omnitest(correctExpr='Pikachu')
+  Hint: Pikapika. You suck. You probably got an error:object "Pikachu" not found. To solve this, simply create an object "Pikachu" by typing "Pikachu <- 2+2". If its still too hard for you, you may type "skip()" into your console. 
+
+- Class: text
+  Output: Awesome work. Now we'll try the next question. 
+
+- Class: cmd_question
+  Output: Again, this is a cmd_question. Usually, you will have to type in exactly what the author (me) wanted in the console to pass this question. However, this time it'll be a little different. Type in any expression that equals to 4. Example:"2 + 2" or "sqrt(16)".
+  CorrectAnswer: 4
+  AnswerTests: omnitest(correctVal= 4)
+  Hint: Any expression should work as long as it equals to 4! Dont just type "4" into it, though. It'll work, but please don't.
+
+- Class: text
+  Output: Excellent job. Now we're moving to multiple choice question.
+  
+- Class: text
+  Output: By the way, did you noticed that if you entered "Pikachu" for the previous question, you could've also answered the previous question?
+  
+  
+- Class: mult_question
+  Output: What's 5 times 5?
+  AnswerChoices: 25;40;6
+  CorrectAnswer: 25
+  AnswerTests: omnitest(correctVal= '25')
+  Hint: It's 25. God damn it! Do you even watch Rick and Morty?
+
+- Class: text
+  Output: Great work. That concludes the test run of this lesson. Hopefully we are able to load this lesson again.  
+
+- Class: text
+  Output: You may now exit this course. 
